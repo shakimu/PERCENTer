@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:text="エラー"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etBaseAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="元にする量"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etComparedAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="比べる量"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="割合"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="計算"
+            android:layout_gravity="center"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="クリア"
+            android:layout_gravity="center"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- 空のView要素でスペースを追加 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+
+</LinearLayout>
